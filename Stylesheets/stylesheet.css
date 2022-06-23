@@ -209,6 +209,7 @@ video {
 .wrapperWork {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
 }
 .workTitle {
     grid-column: 2 / 6;
@@ -249,9 +250,11 @@ video {
     border: 5px solid #555b6e;
     border-radius: 25px;
 }
-.resumeBtn {
+.formBtn {
     grid-row: 6;
-    grid-column: 3;
+    grid-column: 3 / 5;
+}
+.resumeBtn {
     background-color: #ffd6ba;
     margin-bottom: 10%;
     border: 5px solid #555b6e;
@@ -269,6 +272,7 @@ video {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 20px;
+    justify-items: center;
 }
 .personalImg{
     grid-column: 1 / 2;
