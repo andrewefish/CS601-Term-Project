@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title here</title>
+        <title>Andrew Fish: Portfolio</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="Stylesheets/stylesheet.css">
     </head>
     <body>
         <header>
-            <h1>Index Header</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page_one.html">Page 1</a></li>
-                <li><a href="about_me.html">About Me</a></li>
-            </ul>
+            <h1 id="tophead">Andrew Fish: Portfolio</h1>
+            <div class="nav">
+                <a href="about.html">About</a>
+                <a href="Interests.html">Other Interests</a>
+                <a href="work.html">Work Experience</a>
+                <a href="BostonUniversity.html">Boston University</a>
+                <a href="ElonUniversity.html">Elon University</a>
+                <a href="class.html">CS601</a>
+                <a class="active" href="index.html">Home</a>
+            </div>
         </header>
         <main>
-            <h3>Introduction</h3>
-            <img src="multimedia/boston.jpg" alt="Boston Universityh Logo" height="200" width="200">
-            <h5>Header for p1</h5>
-            <p>some content... paragraph 1</p>
-            <br>
-            <h5>Header for p2</h5>
-            <p>some content... paragraph 2</p>
+            <div class="wrapperHome">
+                <img class="personalImg" src="multimedia/IMG_0082.jpeg" alt="Professional Headshot of me">
+                <h2 class="homeTitle">My portfolio of skills, experience, and interests</h2>
+                <div class="boxDesignLeft">
+                    <h4 class="homeHead1">Website Purpose</h4>
+                    <p class="homeText1">
+                        As part of Boston Universitys Web Application Development 
+                        course I am building a comprehensive website to demonstrate
+                        the material that has been learned. The website serves to be
+                        a portfolio including a biography, interests, resume, and 
+                        skills. This website will be hosted and stored on github.
+                    </p>
+                </div>
+                <div class="boxDesignRight">
+                    <h4 class="homeHead2">Material Demonstrated</h4>
+                    <p class="homeText2">
+                        The material demonstrated is a mastery of ability
+                        to create professional websites. This includes web
+                        languages such as HTML5, CSS 3, and JavaScript. As 
+                        well as the JavaScript framework, Vue. The course
+                        also covers web page design/layout, document object 
+                        models (DOM), website usability, and project management.
+                    </p>
+                </div>
+            </div>
         </main>
-        <footer>Some feet</footer>
+        <footer>CS601: Andrew Fish 2022</footer>
     </body>
 </html>

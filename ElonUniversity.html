@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elon</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Stylesheets/stylesheet.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="tophead">Elon University</h1>
+            <div class="nav">
+                <a href="about.html">About</a>
+                <a href="Interests.html">Other Interests</a>
+                <a href="work.html">Work Experience</a>
+                <a href="BostonUniversity.html">Boston University</a>
+                <a class="active" href="ElonUniversity.html">Elon University</a>
+                <a href="class.html">CS601</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+        <main>
+
+
+            <div class="wrapperElon">
+                <img class="elonImg1" src="multimedia/elon.png" alt="Elon University Logo">
+                <h3 class="elonSubtitle">Martha and Spencer Love School of Business</h3>
+                <p class="elonText1">
+                    I completed my undergradute degree at Elon University
+                    in Elon, North Carolina. I graduated with a B.S in Accounting 
+                    along with minors in Computer Science and Data Science. I first 
+                    enrolled at Elon in the Fall of 2017 following my High School 
+                    gradutation. I lived in Elon for all four years until graduating in 
+                    May 2021.
+                </p>
+                <div class="elonAct">
+                    <h3>Additional Activities at Elon</h3>
+                    <div id="app" class="elonBox">
+                        <ul class="elonList">
+                            <li class="elonItems" v-for="x in activities">
+                                {{ x.activity }}
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <br><br>
+            <script>
+                var app = new Vue({
+                    el: '#app',
+                        data: {
+                            activities: [
+                                {activity: "Men's Club Basketball"},
+                                {activity: "Freshman Orientation"},
+                                {activity: "Men's Club Baseball"},
+                                {activity: "Computer Science Tutor"},
+                                {activity: "Intramural Sports"},
+                                {activity: "Study Abroad: Barcelona"}  
+                            ]
+                        }
+                })
+            </script>
+        </main>
+        <footer>CS601: Andrew Fish 2022</footer>
+    </body>
+</html>

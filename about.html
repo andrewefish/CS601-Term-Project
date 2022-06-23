@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Stylesheets/stylesheet.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="tophead">About</h1>
+            <div class="nav">
+                <a class="active" href="about.html">About</a>
+                <a href="Interests.html">Other Interests</a>
+                <a href="work.html">Work Experience</a>
+                <a href="BostonUniversity.html">Boston University</a>
+                <a href="ElonUniversity.html">Elon University</a>
+                <a href="class.html">CS601</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+        <main>
+            <div class="wrapperAbout">
+                <div class="aboutTop">
+                    <h4 class="aboutHead1">About me</h4>
+                    <p class="aboutText1">
+                        I was born in 1998 and raised in Stow Massachusetts until begininning 
+                        my undergradute degree. I attened Nashoba Regional High School and graduated
+                        in 2017. I currently live in Boston where I am a full-time student pursuing
+                        my M.S in Computer Science. I plan to move to New York City in the Fall of
+                        2022 where I have accepted a job offer for Ernst & Young. 
+                    </p>
+                </div>
+                <div class="aboutBottom">
+                    <h4 class="aboutHead2">Website Purpose</h4>
+                    <p class="aboutText2">
+                        This website was created while attending Boston Univeristy
+                        as part of their Web Application Development course (CS601). 
+                        It serves to be a biography and list of experience and interests.
+                        Below is a contact form you can use to send a message to me.
+                    </p>
+                </div>
+                <div class="contactForm">
+                    <h3 class="contactHead">Contact Me</h3>
+                    <form name="form" onsubmit="return validate()" method="post" action="https://bucs601.com/submit.php">
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" id="firstName" name="firstName" required 
+                            pattern="[a-zA-Z]+"><br>
+            
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text" id="lastName" name="lastName" required 
+                            pattern="[a-zA-Z]+"><br>
+            
+                        <label for="facilitator">Email Address</label><br>
+                        <input type="text" id="email" name="email" required><br>
+
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" required></textarea><br><br>
+
+                        <input type="submit" value="Submit">
+                </div>
+            </div>
+        </main>
+        <footer>CS601: Andrew Fish 2022</footer>
+    </body>
+</html>

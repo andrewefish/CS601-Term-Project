@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <title>Interests</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Stylesheets/stylesheet.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="tophead">Other Interests</h1>
+            <div class="nav">
+                <a href="about.html">About</a>
+                <a class="active" href="Interests.html">Other Interests</a>
+                <a href="work.html">Work Experience</a>
+                <a href="BostonUniversity.html">Boston University</a>
+                <a href="ElonUniversity.html">Elon University</a>
+                <a href="class.html">CS601</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+        <main>
+            <div class="wrapperOther">
+                <div id="app">
+                    <img :src="gottiCurrent" class="gottiPhoto" @mouseover="gottiCurrent = gottiPast" alt="Picture of my dog Gotti"/>
+                </div>
+                <p class="gottiText">
+                    Here is a current photo of my dog Gotti and if you hover over it 
+                    you will see a photo of him on the day I adopted him.
+                </p>
+                <p class="otherText">
+                    In my free time I enjoy pursuing personal projects
+                    typically involving data analysis for financial assets.
+                    I am also studying for the CPA which I plan to take in 
+                    August 2022. On the weekends I enjoy walking my dog around the 
+                    city, playing guitar and piano, and playing/watching basketball. 
+                    At the time I began this course the Boston Celtics are playing 
+                    in The Eastern Conference Finals and the dramatic finish of their 
+                    first playoff game against the Brooklyn Nets is included here.
+                </p>
+                <video src="multimedia/video.mp4"></video>
+            </div>
+        </main>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    gottiInfo: "Here is a current photo of my dog Gotti and if you hover over it you will see a photo of him on the day I adopted him.",
+                    gottiCurrent: "multimedia/Gotti_current.jpg",
+                    gottiPast: "multimedia/Gotti_past.jpg"
+                }
+            })
+         </script>
+        <footer>CS601: Andrew Fish 2022</footer>
+    </body>
+</html>
