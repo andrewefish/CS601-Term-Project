@@ -249,12 +249,9 @@ video {
     border: 5px solid #555b6e;
     border-radius: 25px;
 }
-.resumeLink {
-    text-align: center;
-    grid-column: 2 / 6;
-    grid-row: 7;
-}
 .resumeBtn {
+    grid-row: 6;
+    grid-column: 3;
     background-color: #ffd6ba;
     margin-bottom: 10%;
     border: 5px solid #555b6e;
